@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Grupo NautiPlus</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-overview">
+            <h2>What We Offer</h2>
+            <p>At Grupo NautiPlus, we provide a range of services tailored to meet your nautical needs. Our expertise ensures that you receive the best solutions for your maritime adventures.</p>
+        </section>
+
+        <section class="service-cards">
+            <div class="service-card">
+                <img src="path/to/icon1.png" alt="Service 1 Icon">
+                <h3>Service 1</h3>
+                <p>Description of Service 1, highlighting its benefits and features.</p>
+            </div>
+            <div class="service-card">
+                <img src="path/to/icon2.png" alt="Service 2 Icon">
+                <h3>Service 2</h3>
+                <p>Description of Service 2, highlighting its benefits and features.</p>
+            </div>
+            <div class="service-card">
+                <img src="path/to/icon3.png" alt="Service 3 Icon">
+                <h3>Service 3</h3>
+                <p>Description of Service 3, highlighting its benefits and features.</p>
+            </div>
+            <!-- Add more service cards as needed -->
+        </section>
+
+        <section class="quote-request">
+            <h2>Request a Quote</h2>
+            <form action="submit-quote.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="service">Service Interested In:</label>
+                <select id="service" name="service">
+                    <option value="service1">Service 1</option>
+                    <option value="service2">Service 2</option>
+                    <option value="service3">Service 3</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Grupo NautiPlus. All rights reserved.</p>
+        <p>Contact us: info@nautiplus.com | Follow us on social media!</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
