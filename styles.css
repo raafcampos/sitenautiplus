@@ -58,7 +58,7 @@ nav ul li {
 }
 
 .hero {
-    background-image: url('../images/home-abareias.jpg'); /* Imagem de fundo principal */
+    background-image: url('images/home-abareias.jpg'); /* Imagem de fundo principal */
     background-size: cover;
     background-position: center;
     height: 400px;
