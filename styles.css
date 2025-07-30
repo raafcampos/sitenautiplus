@@ -19,6 +19,10 @@ h1, h2, h3 {
     margin: 0;
 }
 
+section h2 {
+    text-transform: uppercase;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -26,6 +30,7 @@ h1, h2, h3 {
 
 .logo h1 {
     font-size: 1.7rem;
+    text-transform: uppercase;
 }
 
 .plus {
