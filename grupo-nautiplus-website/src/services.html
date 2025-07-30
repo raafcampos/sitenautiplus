@@ -1,76 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Grupo NautiPlus</title>
+    <title>Serviços - Grupo NautiPlus</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Montserrat Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Our Services</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Grupo NautiPlus" class="logo-img" />
+            <h1>
+                GRUPO NAUTI<span class="plus">PLUS</span>
+                <i class="fa-solid fa-anchor" style="color: #C59851; margin-left: 8px;"></i>
+            </h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="services-overview">
-            <h2>What We Offer</h2>
-            <p>At Grupo NautiPlus, we provide a range of services tailored to meet your nautical needs. Our expertise ensures that you receive the best solutions for your maritime adventures.</p>
+        <section class="services-page-intro">
+            <h2>Nossa Areia, Sua Solução</h2>
+            <p>Extraída de forma responsável e sustentável do Lago de Itaipu, nossa areia possui a qualidade e a pureza ideais para as mais diversas aplicações. Conheça como nosso produto pode atender às necessidades do seu projeto.</p>
         </section>
 
-        <section class="service-cards">
-            <div class="service-card">
-                <img src="path/to/icon1.png" alt="Service 1 Icon">
-                <h3>Service 1</h3>
-                <p>Description of Service 1, highlighting its benefits and features.</p>
+        <section class="service-applications">
+            <h2>Aplicações da Nossa Areia</h2>
+            <div class="services-container">
+                <div class="service-card">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    <h3>Construção Civil</h3>
+                    <p>Ideal para a produção de concreto, argamassas e aterros, garantindo resistência e durabilidade para sua obra.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-cubes"></i>
+                    <h3>Pré-moldados e Artefatos</h3>
+                    <p>A granulometria controlada da nossa areia é perfeita para a fabricação de blocos, pavers, lajes e outros artefatos de concreto.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-volleyball"></i>
+                    <h3>Áreas de Recreação</h3>
+                    <p>Perfeita para a criação de praias artificiais, quadras de vôlei de areia, beach tennis e playgrounds, oferecendo segurança e conforto.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-flask-vial"></i>
+                    <h3>Uso Industrial</h3>
+                    <p>Utilizada em processos industriais como fundição, fabricação de vidros e sistemas de filtragem de água.</p>
+                </div>
             </div>
-            <div class="service-card">
-                <img src="path/to/icon2.png" alt="Service 2 Icon">
-                <h3>Service 2</h3>
-                <p>Description of Service 2, highlighting its benefits and features.</p>
-            </div>
-            <div class="service-card">
-                <img src="path/to/icon3.png" alt="Service 3 Icon">
-                <h3>Service 3</h3>
-                <p>Description of Service 3, highlighting its benefits and features.</p>
-            </div>
-            <!-- Add more service cards as needed -->
         </section>
 
-        <section class="quote-request">
-            <h2>Request a Quote</h2>
-            <form action="submit-quote.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <section class="location-section">
+            <h2>Localização das Nossas Jazidas</h2>
+            <p>Nossas operações de extração estão localizadas estrategicamente no Lago de Itaipu, em Guaíra-PR.</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d88871.46150775958!2d-54.25574748199987!3d-24.053917730969467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smapa!5e1!3m2!1spt-PT!2sbr!4v1753892261456!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="service">Service Interested In:</label>
-                <select id="service" name="service">
-                    <option value="service1">Service 1</option>
-                    <option value="service2">Service 2</option>
-                    <option value="service3">Service 3</option>
-                </select>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
+        <section class="quote-section">
+            <h2>Pronto para Começar seu Projeto?</h2>
+            <p>Entre em contato conosco para solicitar um orçamento ou saber mais sobre a qualidade e a logística de entrega da nossa areia.</p>
+            <a href="contact.html" class="cta-button">Solicitar Orçamento</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Grupo NautiPlus. All rights reserved.</p>
-        <p>Contact us: info@nautiplus.com | Follow us on social media!</p>
+        <div class="contact-info">
+            <h3>Contato</h3>
+            <p><i class="fa-solid fa-envelope"></i> contato@gruponautiplus.com</p>
+        </div>
+        <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="address">
+            <p><i class="fa-solid fa-location-dot"></i> FOZ DO IGUAÇU, PR</p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>

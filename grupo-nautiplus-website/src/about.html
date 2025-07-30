@@ -1,43 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Grupo NautiPlus</title>
+    <title>Sobre Nós - Grupo NautiPlus</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Montserrat Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Grupo NautiPlus" class="logo-img" />
+            <h1>
+                GRUPO NAUTI<span class="plus">PLUS</span>
+                <i class="fa-solid fa-anchor" style="color: #C59851; margin-left: 8px;"></i>
+            </h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="about">
-            <h1>About Grupo NautiPlus</h1>
-            <p>Founded in [Year], Grupo NautiPlus has been dedicated to providing exceptional nautical services. Our journey began with a passion for the sea and a commitment to excellence.</p>
-            <h2>Our Values</h2>
-            <p>At Grupo NautiPlus, we believe in integrity, quality, and customer satisfaction. Our team is committed to upholding these principles in every project we undertake.</p>
-            <h2>Our Structure</h2>
-            <p>We operate with a dedicated team of professionals who specialize in various aspects of nautical services, ensuring that we meet the diverse needs of our clients.</p>
-            <h2>Our Location</h2>
-            <p>Located in [City, Country], our facilities are equipped to handle a wide range of nautical services, making us a trusted partner in the industry.</p>
+        <section class="about-page-section">
+            <div class="about-intro">
+                <h2>Nossa História</h2>
+                <p>O Grupo NautiPlus nasce da expertise consolidada de mais de duas décadas de atuação no setor de navegação, turismo e serviços ambientais. Com sede em Foz do Iguaçu, nosso grupo se destacou ao longo dos anos por sua capacidade de operar com excelência em ambientes naturais sensíveis e sob rigorosos marcos regulatórios.</p>
+                <p>Com base nesse histórico, a NautiPlus amplia sua atuação para o setor de mineração, iniciando suas operações com foco na lavra sustentável de areia no reservatório de Itaipu. Esse novo empreendimento representa um passo estratégico na diversificação das atividades do grupo, aliando conhecimento técnico, responsabilidade ambiental e compromisso com o desenvolvimento regional.</p>
+            </div>
+        </section>
+
+        <section class="experience-section">
+            <div class="experience-content">
+                <h3>Experiência que Gera Confiança</h3>
+                <p>Nossa experiência anterior inclui a operação de passeios turísticos em ambientes naturais protegidos, como o Parque Nacional do Iguaçu, além da gestão de contratos públicos relevantes, em parceria com instituições como o Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio) e o Governo do Estado do Paraná. Essa trajetória demonstra nossa capacidade de conduzir projetos de forma integrada, ética e ambientalmente responsável.</p>
+            </div>
+            <div class="principles-content">
+                <h3>Mineração com Consciência</h3>
+                <p>A NautiPlus surge, portanto, como uma empresa voltada à mineração com consciência, aplicando os princípios que norteiam todo o nosso grupo: eficiência operacional, respeito ao meio ambiente e compromisso com as comunidades onde atuamos. Buscamos oferecer soluções que conciliem viabilidade econômica e sustentabilidade, contribuindo de forma efetiva para o desenvolvimento local.</p>
+            </div>
+        </section>
+        
+        <section class="values-highlight">
+            <h2>Nossos Pilares</h2>
+            <div class="values-container">
+                <div class="value-card">
+                    <i class="fa-solid fa-gears"></i>
+                    <h4>Eficiência Operacional</h4>
+                </div>
+                <div class="value-card">
+                    <i class="fa-solid fa-leaf"></i>
+                    <h4>Respeito ao Meio Ambiente</h4>
+                </div>
+                <div class="value-card">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <h4>Compromisso com a Comunidade</h4>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Grupo NautiPlus. All rights reserved.</p>
-        <p>Contact us: [Email] | [Phone]</p>
+        <div class="contact-info">
+            <h3>Contato</h3>
+            <p><i class="fa-solid fa-envelope"></i> contato@gruponautiplus.com</p>
+        </div>
         <div class="social-media">
-            <a href="[Facebook URL]">Facebook</a>
-            <a href="[Twitter URL]">Twitter</a>
-            <a href="[Instagram URL]">Instagram</a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="address">
+            <p><i class="fa-solid fa-location-dot"></i> FOZ DO IGUAÇU, PR</p>
         </div>
     </footer>
 </body>

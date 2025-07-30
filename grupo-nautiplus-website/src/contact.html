@@ -1,64 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Grupo NautiPlus</title>
+    <title>Contato - Grupo NautiPlus</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Montserrat Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <!-- Ícones (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Grupo NautiPlus" class="logo-img" />
+            <h1>
+                GRUPO NAUTI<span class="plus">PLUS</span>
+                <i class="fa-solid fa-anchor" style="color: #C59851; margin-left: 8px;"></i>
+            </h1>
+        </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="contact-form">
-            <h2>Get in Touch</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+        <section class="contact-page-section">
+            <h2>Entre em Contato</h2>
+            <p class="subtitle">Estamos prontos para atender você. Preencha o formulário ou utilize nossos canais de contato.</p>
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <form action="#" method="post">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
 
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone">
+                        <label for="phone">Telefone:</label>
+                        <input type="tel" id="phone" name="phone">
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-
-        <section class="contact-info">
-            <h2>Contact Information</h2>
-            <p>Email: info@nautiplus.com</p>
-            <p>Phone: +123 456 7890</p>
-            <p>Business Hours: Mon-Fri 9am - 5pm</p>
-        </section>
-
-        <section class="map">
-            <h2>Our Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509123!2d144.9537353153164!3d-37.81627997975168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f0f0f0f%3A0x0!2sGrupo%20NautiPlus!5e0!3m2!1sen!2sau!4v1616161616161!5m2!1sen!2sau" 
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <button type="submit" class="cta-button">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="contact-details-container">
+                    <h3>Nossas Informações</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> <strong>Endereço:</strong> Foz do Iguaçu, PR</p>
+                    <p><i class="fa-solid fa-envelope"></i> <strong>E-mail:</strong> contato@gruponautiplus.com</p>
+                    <p><i class="fa-solid fa-clock"></i> <strong>Horário:</strong> Seg-Sex 8h às 18h</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3451.625385304905!2d-54.48948496482502!3d-25.42665815296876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smapa!5e1!3m2!1spt-PT!2sbr!4v1753891708103!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Grupo NautiPlus. All rights reserved.</p>
+        <div class="contact-info">
+            <h3>Contato</h3>
+            <p><i class="fa-solid fa-envelope"></i> contato@gruponautiplus.com</p>
+        </div>
         <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="address">
+            <p><i class="fa-solid fa-location-dot"></i> FOZ DO IGUAÇU, PR</p>
         </div>
     </footer>
 

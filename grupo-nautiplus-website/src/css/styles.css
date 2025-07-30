@@ -6,24 +6,39 @@ body {
 }
 
 header {
-    background-color: #003366; /* Dark blue */
-    color: #ffffff; /* White */
-    padding: 20px;
-    text-align: center;
+    background-color: #ffffff; /* Fundo branco para um visual mais limpo */
+    color: #003366; /* Texto em azul escuro para contrastar com o fundo */
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f4f4f4; /* Borda sutil para separação */
 }
 
 h1, h2, h3 {
     margin: 0;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.7rem;
+}
+
+.plus {
+    color: #C59851; /* Cor dourada para destaque */
+}
+
 nav {
-    margin: 20px 0;
+    margin: 0;
 }
 
 nav a {
-    color: #ffffff;
+    color: #003366; /* Cor do texto igual a do cabeçalho */
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
 
@@ -31,45 +46,140 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
 .hero {
-    background-image: url('../images/hero-image.jpg'); /* Replace with actual image path */
+    background-image: url('../images/home-abareias.jpg'); /* Imagem de fundo principal */
     background-size: cover;
     background-position: center;
     height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.section {
-    padding: 40px 20px;
+/* Estilo geral para as seções do corpo */
+.services-highlight, .differentiators-section, .about-us {
+    padding: 60px 40px;
     text-align: center;
 }
 
+/* Alternar cor de fundo para melhor distinção */
+.services-highlight {
+    background-color: #f9f9f9;
+}
+
+.services-highlight h2, .differentiators-section h2, .about-us h2 {
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px auto; /* Centraliza o parágrafo */
+}
+
+/* Container para os cards de serviço */
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
 .service-card {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     border-radius: 8px;
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    flex-basis: 300px; /* Largura base de cada card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: #C59851; /* Dourado */
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #C59851; /* Dourado */
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block; /* Para que o margin-top funcione */
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.differentiators-section {
+    background-color: #ffffff;
+}
+
+.differentiators-section h2 {
+    margin-bottom: 50px;
+}
+
+.differentiators-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.differentiator-item {
+    flex-basis: 300px;
+}
+
+.differentiator-item i {
+    font-size: 3rem;
+    color: #C59851;
+    margin-bottom: 20px;
+}
+
+.differentiator-item h3 {
+    font-size: 1.4rem;
+    color: #003366;
+    margin-bottom: 15px;
+}
+.cta-button:hover {
+    background-color: #b38642; /* Dourado mais escuro */
 }
 
 footer {
     background-color: #003366;
     color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 /* Exemplo para ajustar a logo */
@@ -79,12 +189,275 @@ footer a:hover {
     vertical-align: middle;
 }
 
+footer .social-media a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-media a:hover {
+    color: #C59851; /* Dourado */
+}
+
+/* --- Página de Contato --- */
+.contact-page-section {
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.contact-page-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.contact-page-section .subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form-container, .contact-details-container {
+    flex: 1;
+}
+
+.contact-form-container form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form-container form input,
+.contact-form-container form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-details-container h3 {
+    font-size: 1.6rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.contact-details-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.map-container iframe {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* --- Página Sobre Nós --- */
+.about-page-section {
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.about-intro h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.about-intro p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.experience-section {
+    display: flex;
+    gap: 40px;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.experience-content, .principles-content {
+    flex: 1;
+}
+
+.experience-section h3 {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 15px;
+    border-left: 4px solid #C59851;
+    padding-left: 15px;
+}
+
+.experience-section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.values-highlight {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.values-highlight h2 {
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 40px;
+}
+
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    flex-basis: 280px;
+}
+
+.value-card i {
+    font-size: 3rem;
+    color: #C59851;
+    margin-bottom: 20px;
+}
+
+.value-card h4 {
+    font-size: 1.3rem;
+    color: #003366;
+    margin: 0;
+}
+
+/* --- Página de Serviços --- */
+.services-page-intro {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.services-page-intro h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.services-page-intro p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+.service-applications {
+    padding: 60px 40px;
+    background-color: #f9f9f9;
+}
+
+.service-applications h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 40px;
+}
+
+.quote-section {
+    padding: 60px 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.quote-section h2 {
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.quote-section p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+
+.location-section {
+    padding: 60px 40px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.location-section h2 {
+    font-size: 2.2rem;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.location-section p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
     .hero {
         height: 300px;
     }
 
-    .service-card {
-        margin: 10px;
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .experience-section {
+        flex-direction: column;
+    }
+
+    .differentiators-container {
+        gap: 40px;
     }
 }
